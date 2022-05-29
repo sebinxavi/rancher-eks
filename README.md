@@ -60,7 +60,9 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 ### Step 6: Add EKS cluster to Rancher
 - Click on clusters and choose Generic
+
 ![alt text](https://i.ibb.co/HpchZqw/Rancher-3.png)
+
 - Add the Cluster name and click on Create
 ![alt text](https://i.ibb.co/YWZs5CY/Adding-Cluster-to-rancher.png)
 
