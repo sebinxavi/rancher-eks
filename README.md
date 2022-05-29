@@ -1,5 +1,8 @@
 In this blog, we’re demonstrating how to configure Rancher and add an existing AWS EKS cluster to it. Rancher is an open source software platform that is used for managing the Kubernetes clusters. 
 
+
+## Prerequisites
+
 1. EC2 Instance Ubuntu
 2. EKS cluster 
 
@@ -35,33 +38,33 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ~~~
 ![alt text](https://i.ibb.co/xFY5J74/Docker-Installation.png)
 
-## Step 2: Run the Latest Rancher image in Docker
+### Step 2: Run the Latest Rancher image in Docker
 ~~~
  sudo docker run -d --restart=always -p 80:80 -p 443:443 -v /opt/rancher:/var/lib/rancher --privileged rancher/rancher:latest
 ~~~
 ![alt text](https://i.ibb.co/n0GjYtq/Docker-Rancher.png)
-## Step 3:  Setup the Application Load Balancer
+### Step 3:  Setup the Application Load Balancer
 - Configure the ALB and Target group
 ![alt text](https://i.ibb.co/GRzXT66/Target-Group.png)
 - Point domain to ALB endpoint in Route 53
 ![alt text](https://i.ibb.co/BgppwHX/Route-53.png)
 
-## Step 4: Access Rancher URL in browser
+### Step 4: Access Rancher URL in browser
 ![alt text](https://i.ibb.co/1KFbkPN/Welcome-page-rancher.png)
 
-## Step 5: Login Rancher 
+### Step 5: Login Rancher 
 - Follow instructions which appears in welcome page
 ![alt text](https://i.ibb.co/CnPhtYs/Rancher-Password.png)
 - Login Rancher
 ![alt text](https://i.ibb.co/px3bnp2/Welcome-page-rancher-2.png)
 
-## Step 6: Add EKS cluster to Rancher
+### Step 6: Add EKS cluster to Rancher
 - Click on clusters and choose Generic
 ![alt text](https://i.ibb.co/HpchZqw/Rancher-3.png)
 - Add the Cluster name and click on Create
 ![alt text](https://i.ibb.co/YWZs5CY/Adding-Cluster-to-rancher.png)
 
-## Step 7: Apply the kubectl command
+### Step 7: Apply the kubectl command
 ![alt text](https://i.ibb.co/MMQ6zt9/kubectl-apply-rancher.png)
 ~~~
  $ kubectl apply -f https://domain/v3/import/xxxxxxxxxx.yaml
@@ -91,7 +94,7 @@ replicaset.apps/cattle-cluster-agent-68fb87d757   0         0         0       52
 replicaset.apps/cattle-cluster-agent-745894d768   0         0         0       2m55s
 ~~~
 
-## Step 8: Access the Rancher UI
+### Step 8: Access the Rancher UI
 - Once that is done, up and running cluster metrics will show as below.
 ![alt text](https://i.ibb.co/h8q9xnP/Cluster-Info.png)
 
