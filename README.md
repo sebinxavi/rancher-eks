@@ -43,12 +43,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ~~~
 ![alt text](https://i.ibb.co/n0GjYtq/Docker-Rancher.png)
 ### Step 3:  Setup the Application Load Balancer
-- Configure the ALB and Target group
-<p align="left">
-  <img width="600" height="450" src="https://i.ibb.co/GRzXT66/Target-Group.png">
-</p>
 ![alt text](https://i.ibb.co/GRzXT66/Target-Group.png)
-- Point domain to ALB endpoint in Route 53
 ![alt text](https://i.ibb.co/BgppwHX/Route-53.png)
 
 ### Step 4: Access Rancher URL in browser
