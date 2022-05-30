@@ -1,4 +1,4 @@
-I've created a blog post that demonstrates how to set up Rancher and integrate it to an existing AWS EKS cluster. Rancher is an open source software platform that is used for managing the Kubernetes clusters. 
+I’ve created a blog post that demonstrates how to set up Rancher and integrate an existing AWS EKS cluster into it. Rancher is an open-source software platform that is used for managing the Kubernetes clusters.
 
 ## Prerequisites
 
@@ -7,7 +7,8 @@ I've created a blog post that demonstrates how to set up Rancher and integrate i
 
 ### Step 1: Install Docker on EC2 instance (Rancher Server)
 
-I used to follow below steps to install latest Docker version in Ubuntu,
+I used to follow the below steps to install the latest Docker version in Ubuntu,
+
 ~~~
 sudo apt-get update
 ~~~
@@ -56,7 +57,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ![alt text](https://i.ibb.co/1KFbkPN/Welcome-page-rancher.png)
 
 ### Step 5: Login Rancher 
-- Follow instructions which appears in welcome page
+- Follow the instructions that appear on the welcome page
 
 ![alt text](https://i.ibb.co/CnPhtYs/Rancher-Password.png)
 
@@ -104,12 +105,12 @@ replicaset.apps/cattle-cluster-agent-745894d768   0         0         0       2m
 ~~~
 
 ### Step 8: Access the Rancher UI
-- Once that is done, up and running cluster metrics will show as below.
+- Once that is done, cluster metrics will show as below. You will be able to manage the EKS cluster now by creating new deployments, services, etc.
 
 ![alt text](https://i.ibb.co/h8q9xnP/Cluster-Info.png)
 
 ## Summary
-We can add an existing Kubernetes cluster or create a new kubernetes cluster using Rancher and scale up and scale down multiple nodes, pods etc. 
+We can add an existing Kubernetes cluster or create a new Kubernetes cluster using Rancher and scale up and scale down multiple nodes, pods, etc.
 
 ## Author
 Created by [@sebinxavi](https://www.linkedin.com/in/sebinxavi/) - feel free to contact me and advise as necessary!
