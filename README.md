@@ -56,8 +56,11 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 ### Step 5: Login Rancher 
 - Follow instructions which appears in welcome page
+
 ![alt text](https://i.ibb.co/CnPhtYs/Rancher-Password.png)
+
 - Login Rancher
+
 ![alt text](https://i.ibb.co/px3bnp2/Welcome-page-rancher-2.png)
 
 ### Step 6: Add EKS cluster to Rancher
@@ -66,6 +69,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ![alt text](https://i.ibb.co/HpchZqw/Rancher-3.png)
 
 - Add the Cluster name and click on Create
+
 ![alt text](https://i.ibb.co/YWZs5CY/Adding-Cluster-to-rancher.png)
 
 ### Step 7: Apply the kubectl command
@@ -100,6 +104,7 @@ replicaset.apps/cattle-cluster-agent-745894d768   0         0         0       2m
 
 ### Step 8: Access the Rancher UI
 - Once that is done, up and running cluster metrics will show as below.
+
 ![alt text](https://i.ibb.co/h8q9xnP/Cluster-Info.png)
 
 ## Summary
