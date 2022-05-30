@@ -2,7 +2,7 @@ I've created a blog post that demonstrates how to set up Rancher and integrate i
 
 ## Prerequisites
 
-1. EC2 Instance Ubuntu
+1. AWS EC2 Instance - Ubuntu
 2. EKS cluster with kubectl access
 
 ### Step 1: Install Docker on EC2 instance (Rancher Server)
@@ -42,6 +42,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
  sudo docker run -d --restart=always -p 80:80 -p 443:443 -v /opt/rancher:/var/lib/rancher --privileged rancher/rancher:latest
 ~~~
 ![alt text](https://i.ibb.co/n0GjYtq/Docker-Rancher.png)
+
 ### Step 3:  Setup the Application Load Balancer
 - Configure the ALB and Target group
 
@@ -109,3 +110,9 @@ replicaset.apps/cattle-cluster-agent-745894d768   0         0         0       2m
 
 ## Summary
 We can add an existing Kubernetes cluster or create a new kubernetes cluster using Rancher and scale up and scale down multiple nodes, pods etc. 
+
+## Author
+Created by [@sebinxavi](https://www.linkedin.com/in/sebinxavi/) - feel free to contact me and advise as necessary!
+
+<a href="mailto:sebin.xavi1@gmail.com"><img src="https://img.shields.io/badge/-sebin.xavi1@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/sebinxavi"><img src="https://img.shields.io/badge/-Linkedin-blue"/></a>
