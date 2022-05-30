@@ -45,7 +45,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ### Step 3:  Setup the Application Load Balancer
 - Configure the ALB and Target group
 <p align="left">
-  <src="https://i.ibb.co/GRzXT66/Target-Group.png">
+  <img width="600" height="450" src="https://i.ibb.co/GRzXT66/Target-Group.png">
 </p>
 ![alt text](https://i.ibb.co/GRzXT66/Target-Group.png)
 - Point domain to ALB endpoint in Route 53
