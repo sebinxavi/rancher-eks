@@ -1,14 +1,13 @@
-In this blog, we’re demonstrating how to configure Rancher and add an existing AWS EKS cluster to it. Rancher is an open source software platform that is used for managing the Kubernetes clusters. 
-
+I've created a blog post that demonstrates how to set up Rancher and integrate it to an existing AWS EKS cluster. Rancher is an open source software platform that is used for managing the Kubernetes clusters. 
 
 ## Prerequisites
 
 1. EC2 Instance Ubuntu
-2. EKS cluster 
+2. EKS cluster with kubectl access
 
 ### Step 1: Install Docker on EC2 instance (Rancher Server)
 
-I used to follow below steps to install latest Docker version in Ubuntu
+I used to follow below steps to install latest Docker version in Ubuntu,
 ~~~
 sudo apt-get update
 ~~~
