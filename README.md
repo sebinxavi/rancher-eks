@@ -113,7 +113,7 @@ replicaset.apps/cattle-cluster-agent-745894d768   0         0         0       2m
 We can add an existing Kubernetes cluster or create a new Kubernetes cluster using Rancher and scale up and scale down multiple nodes, pods, etc.
 
 ## Author
-Created by [@sebinxavi](https://www.linkedin.com/in/sebinxavi/) - feel free to contact me and advise as necessary!
+Created by [@sebinxavi](https://www.linkedin.com/in/sebinxavi/) - feel free to contact me and advise as necessary!!
 
 <a href="mailto:sebin.xavi1@gmail.com"><img src="https://img.shields.io/badge/-sebin.xavi1@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
 <a href="https://www.linkedin.com/in/sebinxavi"><img src="https://img.shields.io/badge/-Linkedin-blue"/></a>
